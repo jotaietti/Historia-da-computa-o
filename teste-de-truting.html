@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de turing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+body {
+
+font-family: "Titillium Web", sans-serif;
+font-weight: 500;
+font-style: normal;
+line-height: 1.6;
+background-color: rgb(17,17,17);
+margin: 0;
+padding: 0;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+header {
+    background-image: url("C:/temp/Imagens  HC/placa.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 20px; /* Ajuste o padding conforme necessário */
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a cor e a opacidade conforme necessário */
+
+    
+}
+  header h1, header p {
+    position: relative;
+    z-index: 1;
+}
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a cor e a opacidade conforme necessário */
+    z-index: 0;
+  }
+  p{
+        font-family: "Titillium Web", sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f1f1f1;
+        padding: 15px;
+        margin: 20px 0;
+        letter-spacing: 0.5px;
+        word-spacing: 2px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        margin-left: 350px;
+        margin-right: 350px;
+        text-align: justify;
+        text-shadow: 0px 1px 2px;
+    } 
+
+h2{
+    color: #f1f1f1;
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.botaov {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 90%;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight ;
+    font-style: normal;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    }
+
+    .botaov:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    }
+
+    .botaov:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+    }
+    .botaoe {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 90%;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight ;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+  }
+
+    .botaoe:hover {
+    background-color: #b30000;
+    transform: scale(1.1);
+    }
+
+    .botaoe:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+    }
+</style>
+
+</head>
+<body>
+<header>
+    <h1>Teste de Turintg</h1>
+</header>    
+    <h2>O que é o teste de Turing</h2>
+    <p> O matemático, e posteriormente pai da computação, Alan Turing contribuiu com muitos avanços tecnológicos na época da Segunda Guerra Mundial, como o desenvolvimento do sistema “The Bombe”, que decodificava mensagens nazistas criptografadas, a qual permitiu vantagem sobre os alemães. 
+    </p>
+    <img src="img/g1.png" alt="turing">
+    <p> Com a alta repercussão da mais nova tecnologia criada, a sociedade  apresentou diversos questionamentos e desconfianças acerca da capacidade “racional” da máquina, se esta poderia pensar de modo independente como os humanos, ou até mesmo superá-los em algum momento. A polêmica levou Turing a sistematizar um teste aplicado em inteligências artificiais que indicaria se seria ou não possível distinguir uma máquina de uma pessoa. </p>
+<p>O Teste de Turing fundamenta-se no Jogo da Imitação, também idealizado pelo matemático, o qual consiste na participação de três jogadores: um computador, uma pessoa e um interrogador.  O primeiro deve responder às perguntas feitas pelo interrogador, “tentando” passar-se por um ser humano, já o segundo deve responder normalmente ao questionário. No final do teste, o interrogador deve descobrir quem é quem. Caso a máquina conseguisse passar no teste, ou seja, enganar o mediador, esta seria considerada inteligente.
+    </p>
+    <img src="img/teste.png" alt="teste">
+    <p>O primeiro caso em que  um computador passou no Teste de Turing ocorreu no ano de 2014, o sistema Eugene Goostman “[...] conseguiu convencer 33% dos juízes de que ele era humano, muito embora para os outros jurados tenha ficado claro que se tratava de um computador.” (O GLOBO, 2014) </p>
+<p>Atualmente, já existem muitas AI que respondem usuários de forma natural, e a tendência é que elas fiquem cada vez mais parecidas com seres humanos. Mas esse aprimoramento das tecnologias causa uma ineficácia do Teste de Turing original, mostrando-se ultrapassado simples de mais no processo de diferenciação dos sistemas artificiais. Retomando a busca por meios que tragam formas de discernir, efetivamente, computadores de humanos</p>
+
+
+<a  href="filmes.html" class="botaov" >filmes  </a> 
+<a  href="linha.html" class="botaoe">linha do tempo </a>
+
+
+</body>
+</html>

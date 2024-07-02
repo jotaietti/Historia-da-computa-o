@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    
+    <title>Timeline</title>
+    
+    <style>
+
+       
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+       
+       
+       html, body, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color:#272424;
+    background-color: rgb(17,17,17);
+}
+header {
+    background-image: url("C:/temp/Imagens  HC/placa.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: #399b37;
+    padding: 40px 20px; /* Ajuste o padding conforme necessário */
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a cor e a opacidade conforme necessário */
+
+    
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    
+}
+
+.timeline ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.point {
+    min-width: 20px;
+    height: 20px;
+    background-color: #399b37;
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px #f1f1f1 solid;
+    position: relative;
+    left: 1px;
+}
+
+@media (max-width: 800px) {
+    .point {
+        min-width: 15px;
+        height: 15px;
+    }
+
+    html, body {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    html, body {
+        font-size: 14px;
+    }
+    
+    .point {
+        min-width: 12px;
+        height: 12px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    p {
+        padding: 10px !important;
+    }
+}
+
+.timeline ul li .content {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content {
+    padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .content {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+    padding-left: 0;
+}
+
+.timeline ul li .date {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+.timeline ul li .date h4 {
+    background-color: #5cc45a;
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.timeline ul li .content h3 {
+    padding: 10px 20px;
+    background-color:  #399b37;
+    margin-bottom: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.timeline ul li .content p {
+    padding: 10px 20px;
+    background-color: #5cc45a;
+    margin-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+    float: right
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: #f1f1f1;
+}
+.botaov {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 90%;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight ;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    }
+
+    .botaov:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    }
+
+    .botaov:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+    }
+    .botaoe {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 90%;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight ;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 20px;
+  }
+
+    .botaoe:hover {
+    background-color: #b30000;
+    transform: scale(1.1);
+    }
+
+    .botaoe:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+    }
+    </style>
+</head>
+
+<body>
+        <header>
+        <h1>linha do tempo </h1>
+        </header>
+    <div class="timeline">
+
+            <ul>
+                <li>
+                    <div class="content">
+                        <h3>Ábaco(a primeira calculadora da história)</h3>
+                        <p> Utilizado para fazer contas simples na antiguidade. (principalmente na área do comércio). Pode ser considerado a primeira calculadora, a qual utilizava um sistema básico para resolução de problemas de forma mais eficiente.
+                            Utilizado para fazer contas simples na antiguidade. (principalmente na área do comércio). Pode ser considerado a primeira calculadora, a qual utilizava um sistema básico para resolução de problemas de forma mais eficiente.</p>
+                    </div>
+                    <div class="point"></div>
+                    <div class="date">
+                        <h4>3000a.c                     </h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Régua de cálculos</h3>
+                        <p> Utilizando das pesqisas sobre logaritmo, Willian Hightred criou uma tabela para multiplicações muito grandes. Era baseado em vários cálculos pré-calculados..</p>
+                    </div>
+                    <div class="point"></div>
+                    <div class="date">
+                        <h4>1638                     </h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Máquina de Pascal</h3>
+                        <p> Primeira máquina mecânica. O interesse era produzir uma espécie de calculadora com as 4 operações, porèm, ela fazia apenas adição e subtração.</p>
+                    </div>
+                    <div class="point"></div>
+                    <div class="date">
+                        <h4>1642                    </h4>
+                    </div>
+                </li>
+                <li>
+                <div class="content">
+                    <h3>A Máquina de Diferenças e o Engenho Analítico</h3>
+                    <p> Por meio de cartôes perfurados era possivel recortar tecido na forma do molde.- princípio para a ideia da máquina capaz de cálcular diversas coisas com uma precisão de até 50 casa decimais - Autor: Charles Babbage</p>
+                </div>
+                <div class="point"></div>
+                <div class="date">
+                    <h4>1837                   </h4>
+                </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Máquina de Turing</h3>
+                        <p> Possibilitava a realização de diversas operações. Allan Turing desejva criar algo que fosse prático e que tivesse mais aplicabilidade.</p>
+                    </div>
+                    <div class="point"></div>
+                    <div class="date">
+                        <h4>1936                   </h4>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>ENIAC</h3>
+                            <p> Apresentado pelos americanos John Eckert e John Mauchly Possibilitava a aplicabilidade de operações sem movimentar peças, se desenvolvendo apenas com entradas no painel. Ttinha com principal característica o uso de válvulas eletrônicas,
+                                possuindo dimensões enormes. Eles utilizavam quilômetros de fios, chegando a atingir temperaturas muito elevadas.</p>
+                        </div>
+                        <div class="point"></div>
+                        <div class="date">
+                            <h4>1946                    </h4>
+                        </div>
+                        </li>
+            </ul>
+        </div>
+    </div>
+    <a  href="teste-de-truting.html" class="botaov" >Teste de turing</a> 
+    <a  href="teste.html" class="botaoe">voltar </a>
+</body>
+
+</html>

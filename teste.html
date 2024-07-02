@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>História da Computação</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+  body {
+
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.6;
+    background-color: rgb(17,17,17);
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+  }
+  header {
+    background-image: url("C:/temp/Imagens  HC/placa.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 20px; /* Ajuste o padding conforme necessário */
+    text-align: center;
+    position: relative;
+    
+}
+  header h1, header p {
+    position: relative;
+    z-index: 1;
+}
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a cor e a opacidade conforme necessário */
+    z-index: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    
+  }
+  .timeline {
+    margin-top: 30px;
+  }
+  .timeline .slick-slide {
+    padding: 0 50px;
+  }
+  .timeline-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 0 20px;
+    text-align: center;
+  }
+  .timeline-item h3 {
+    margin-top: 0;
+  }
+  .timeline-item p {
+    color: #000000; /* Correção na cor do texto */
+  }
+   .timeline-item img {
+    max-width: 100%;
+    max-height: 400px; /* Altura máxima definida */
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px auto; /* Centraliza a imagem horizontalmente */
+    display: block; /* Garante que a margem auto funcione */
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color:  #399b37
+    ; /* Change arrow color to black */
+  }
+  .botaov {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 90%;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight ;
+    font-style: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    }
+
+    .botaov:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    }
+
+    .botaov:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+    }
+    .botaoe {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 90%;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight ;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 20px;
+  }
+
+    .botaoe:hover {
+    background-color: #b30000;
+    transform: scale(1.1);
+    }
+
+    .botaoe:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>História da Computação</h1>
+  <p>Do surgimento dos primeiros computadores até a era da computação quântica</p>
+</header>
+
+<div class="container">
+  <h2>Linha do Tempo da Computação</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h3>1936 - Máquina de Turing</h3>
+      <p>Alan Turing concebe a Máquina de Turing, um modelo teórico fundamental para o desenvolvimento de computadores modernos.</p>
+      <img src="img/Turing.jpg" alt="Máquina de Turing">
+    </div>
+    <div class="timeline-item">
+      <h3>1945 - ENIAC</h3>
+      <p>O ENIAC (Electronic Numerical Integrator and Computer) é o primeiro computador eletrônico de grande escala, construído nos Estados Unidos.</p>
+      <img src="img/eniac.png" alt="ENIAC">
+    </div>
+    <div class="timeline-item">
+      <h3>1950s - Desenvolvimento de Redes Neurais</h3>
+      <p>Início das pesquisas em redes neurais, um precursor do machine learning.</p>
+      <img src="img/redes neurais.png" alt="Redes Neurais">
+    </div>
+    <div class="timeline-item">
+      <h3>1960s - ARPANET</h3>
+      <p>O ARPANET é criado, precursor da internet e uma das maiores inovações em redes de computadores.</p>
+      <img src="img/Arpanet.png" alt="ARPANET">
+    </div>
+    <div class="timeline-item">
+      <h3>1970s - Desenvolvimento de Microprocessadores</h3>
+      <p>A Intel lança o primeiro microprocessador, revolucionando a computação pessoal.</p>
+      <img src="img/Microprocessadores.jpg" alt="Microprocessador">
+    </div>
+    <div class="timeline-item">
+      <h3>1980s - Desenvolvimento da World Wide Web</h3>
+      <p>Tim Berners-Lee propõe e desenvolve a World Wide Web, transformando a maneira como compartilhamos informações.</p>
+      <img src="img/WWW.webp" alt="World Wide Web">
+    </div>
+    <div class="timeline-item">
+      <h3>1990s - Machine Learning</h3>
+      <p>O machine learning se torna uma área de pesquisa importante, impulsionada por avanços em algoritmos e poder computacional.</p>
+      <img src="img/machine learning.png" alt="Machine Learning">
+    </div>
+    <div class="timeline-item">
+      <h3>2000s - Computação Quântica</h3>
+      <p>Início das pesquisas sérias em computação quântica, explorando o uso de princípios quânticos para realizar cálculos.</p>
+      <img src="img/Quantico.png" alt="Computação Quântica">
+    </div>
+    <div class="timeline-item">
+      <h3>Atualmente - Avanços em Inteligência Artificial</h3>
+      <p>Avanços significativos em inteligência artificial, incluindo deep learning e redes neurais profundas.</p>
+      <img src="img/deep leaning.png" alt="Inteligência Artificial">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.timeline').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      variableWidth: false, 
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            variableWidth: false, 
+             initialSlide: 0	
+          }
+        }
+      ]
+    });
+  });
+</script>
+    <a  href="linha.html" class="botaov" >linha do Tempo</a> 
+    <a  href="index.html" class="botaoe">voltar </a>
+
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Começar</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .matrix {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .word {
+            position: absolute;
+            font-size: 20px;
+            white-space: nowrap;
+            opacity: 0;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(100vh);
+            }
+        }
+        @keyframes moveUpDown {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .botaov {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 250px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight ;
+    font-style: normal;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+
+
+    }
+
+    .botaov:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    }
+
+    .botaov:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+    }
+    .botaoe {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    position: absolute;
+    margin-top: 250px;
+    margin-right: 250px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight ;
+    font-style: normal;
+    text-decoration: none;
+
+    }
+
+    .botaoe:hover {
+    background-color: #b30000;
+    transform: scale(1.1);
+    }
+
+    .botaoe:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+    }
+    </style>
+</head>
+<body>
+    <div class="matrix" id="matrix"></div>
+    <h1 class="titulo"> DESEJA COMEÇAR</h1> 
+    <script>
+        const words = ["01100111 01110000 01110100 ", "01100111 01110000 01110100 ", "01100111 01110000 01110100 ", "01100111 01110000 01110100 ", "01100111 01110000 01110100 ", "01100111 01110000 01110100 ", "01100111 01110000 01110100 ", "01100111 01110000 01110100 ", "01100111 01110000 01110100 ", "01100111 01110000 01110100 "];
+        const matrix = document.getElementById('matrix');
+
+        function createWord(word) {
+            const span = document.createElement('span');
+            span.classList.add('word');
+            span.innerText = word;
+            span.style.left = `${Math.random() * 100}vw`;
+            span.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            span.style.animationDelay = `${Math.random() * 5}s`;
+            matrix.appendChild(span);
+
+            span.addEventListener('animationend', () => {
+                matrix.removeChild(span);
+                createWord(word);
+            });
+        }
+
+        words.forEach(word => createWord(word));
+        
+    </script>
+
+<a  href="teste.html" class="botaov" >Bora </a>
+<a  href="" class="botaoe">Não to afim</a>
+
+
+
+</body>
+</html>
